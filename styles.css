@@ -1,0 +1,129 @@
+/* Reset */
+
+h1,
+h2,
+h5,
+h6 {
+  margin: 0;
+}
+
+:root {
+  --default-margin: 8px;
+}
+
+body {
+  display: block;
+  margin: var(--default-margin);
+}
+
+body {
+  color: white;
+  font-family: "DM Mono", monospace; /* default font */
+}
+
+.bg {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0.9) 95%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("./beeple.jpeg");
+  width: 100%;
+  height: calc(100vh - var(--default-margin) * 2);
+  background-size: cover;
+}
+
+.bg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero img {
+  width: 80px;
+  margin-top: -40px;
+}
+
+.footer {
+  position: absolute;
+  min-height: 30px;
+  left: var(--default-margin);
+  right: var(--default-margin);
+  bottom: var(--default-margin);
+
+  padding: 10px;
+}
+
+/* Text Styles */
+
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 30px; /* 20px */
+  line-height: 1;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+a,
+a span.material-icons,
+a span.material-icons-outlined {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+
+b,
+em {
+  font-weight: 500;
+}
+
+i {
+  font-style: italic;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: uppercase;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
